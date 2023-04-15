@@ -1,0 +1,367 @@
+
+* {
+padding: 0;
+margin: 0;
+font-family: 'Inter', sem serifa;
+border: none;
+list-style: none;
+box-sizing: border-box;
+}
+
+body {
+background: url( "../img/bg-tattah.webp");
+background-position: center center;
+background-size: contain;
+color: #fff;
+margin-bottom: 20px;
+}
+
+html {scroll-behavior: smooth;}
+
+.container {
+width: 100%;
+max-width: 856px;
+margin: 0 auto;
+padding: 0 20px;
+}
+
+.nav-bar {
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+}
+
+.nav-list {
+display: flex;
+align-items: center;
+padding: 0 6px;
+}
+
+.nav-list ul {
+display: flex;
+justify-content: center;
+list-style: none;
+}
+
+.nav-item {
+margin: 0 20px;
+}
+
+.nav-link {
+text-decoration: none;
+font-size: 14px;
+color: #fff;
+padding: 8px 0px;
+text-transform: uppercase;
+}
+
+a {
+text-decoration: none;
+color: #fff;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+a:hover {
+text-decoration: none;
+color: #F40387;
+cursor: pointer;
+}
+
+header {
+margin-top: 32px;
+padding-top: 10px;
+padding-bottom: 20px;
+color: #141414;
+width: 100%;
+}
+
+h1,h2  {
+text-transform: uppercase;
+}
+
+h2 {
+font-size:22px;
+}
+
+h1 {
+font-size:32px;
+}
+
+
+.btn {
+background-color: #F1E612;
+padding: 12px 14px;
+font-size: 11px;
+text-transform: uppercase;
+font-weight: bold;
+border-radius: 0px 20px 0px 20px ;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.btn:hover {
+padding: 12px 14px;
+font-size: 11px;
+text-transform: uppercase;
+font-weight: bold;
+border-radius: 20px 0px 20px 0px ;
+cursor: pointer;
+}
+
+.btn2 {
+background-color: #F40387;
+padding: 12px 14px;
+font-size: 11px;
+text-transform: uppercase;
+font-weight: bold;
+border-radius: 0px 20px 0px 20px ;
+transition-duration: 0.4s;
+cursor: pointer;
+}
+
+.btn2:hover {
+padding: 12px 14px;
+font-size: 11px;
+text-transform: uppercase;
+font-weight: bold;
+border-radius: 20px 0px 20px 0px ;
+cursor: pointer;
+}
+
+img {
+max-width: 100%;
+}
+
+.zoom {
+  overflow: hidden;
+}
+
+.zoom img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+
+/* CONTEÚDO MAIN E SESSÕES */
+
+.agenda {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.data-show {
+max-width: 135px;
+}
+
+main .container {
+display: flex;
+justify-content: space-between;
+margin-top: 44px;
+}
+
+
+.album-clipe {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.album {
+max-width: 119px;
+}
+
+.clipe {
+max-width: 119px;
+}
+
+
+.instagram {
+display: flex;
+justify-content: space-between;
+margin-top: 52px;
+}
+
+.fotos-instagram {
+gap: 35px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.box-text-instagram {
+max-width: 333px;
+}
+
+.play-spotify {
+margin-top: 52px;
+}
+
+.agenda-shows {
+display: flex;
+justify-content: space-between;
+margin-top: 32px;
+}
+
+.sobre {
+display: flex;
+justify-content: space-between;
+margin-top: 32px;
+}
+
+.text-sobre {
+max-width: 520px;
+}
+
+.rede {
+display: flex;
+justify-content: space-between;
+margin-top: 72px;
+border-top: 2px solid white;
+border-bottom: 2px solid white;
+padding: 42px 0px 42px 0px;   
+}
+
+.icone-rede {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.icone {
+margin-right: 20px;
+}
+
+.contato {
+display: flex;
+justify-content: space-between;
+margin-top: 62px;
+align-items: center;
+}
+
+.tel {
+display: flex;
+align-items: center;
+
+}
+
+.email {
+display: flex;
+align-items: center;
+}
+
+
+.parceiros {
+margin-top: 42px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 20px;
+}
+
+
+/* DESIGNER */
+.powered {
+margin-top: 52px;
+margin-bottom: 20px;
+text-align: center;
+font-size: 12px;
+color: #393936;
+}
+
+
+/* MOBILE */
+
+
+@media screen and (max-width: 430px) {
+
+body {
+background: url( "../img/bg-tattah.webp");
+background-position: center center;
+background-size: cover;
+color: #fff;
+margin-bottom: 20px;
+}
+
+header {
+margin-top: 16px;
+}
+
+.nav-bar {
+align-items: center;
+flex-direction: column;
+}
+
+.nav-list {
+margin-top: 20px;
+}
+
+main .container {
+flex-direction: column;
+margin-top: 20px;
+}
+
+.agenda {
+flex-direction: row;
+margin-bottom: 24px;
+}
+
+.album-clipe {
+flex-direction: row;
+margin-top: 24px;
+}
+
+.instagram {
+margin-top: 32px;
+flex-direction: column;
+}
+
+.fotos-instagram {
+margin-top: 24px;
+}
+
+.agenda-shows {
+flex-wrap: wrap;
+gap: 24px;
+}
+
+.sobre {
+flex-direction: column;
+gap: 32px;
+}
+
+.rede {
+flex-direction: column;
+gap: 32px;
+align-items: flex-start;  
+}
+
+.contato {
+flex-direction: column;
+gap: 32px;
+align-items: flex-start;
+}
+
+.tel {
+flex-direction: column;
+gap: 16px;
+align-items: flex-start;
+}
+
+.email {
+flex-direction: column;
+gap: 16px;
+align-items: flex-start;
+}
+
+
+}
